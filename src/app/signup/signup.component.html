@@ -1,0 +1,78 @@
+<nav>
+  <div class="nav-wrapper brown darken-3">
+    <a href="#" class="brand-logo center" routerLink="">Socializer</a>
+  </div>
+</nav>
+<div class="container">
+<div id="signup-form">
+ <div class="row" id="head-text">
+   <h4>Create your account
+   </h4>
+   <p>Become a member and access full features</p>
+ </div>
+  <div class="row">
+    <form class="col s12" [formGroup]="registerForm" (ngSubmit)="submit()">
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" required formControlName="fname" (keyup)="fname" [ngClass]="{valid:!fname&&registerForm.get('fname').dirty,invalid:fname&&registerForm.get('fname').dirty}">
+          <label for="first_name">First Name</label>
+
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" required formControlName="lname" (keyup)="lname" [ngClass]="{valid:!lname&&registerForm.get('lname').dirty,invalid:lname&&registerForm.get('lname').dirty}">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required formControlName="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="password" type="password" (keyup)="pass" [ngClass]="{valid:!pass&&registerForm.get('password').dirty,invalid:pass&&registerForm.get('password').dirty}" required formControlName="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="confirm_password" type="password" required formControlName="conf_password" (keyup)="check_conf($event.target.value)" [ngClass]="{valid:statusConf&&registerForm.get('conf_password').dirty,invalid:!statusConf&&registerForm.get('conf_password').dirty}">
+          <label for="confirm_password">Confirm Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+        <input type="date" id="bd" required formControlName="bd">
+          <span>Birthdate</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <p>
+            <label>
+              <input name="gender" type="radio" formControlName="gender" value="male"/>
+              <span>Male</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field col s6">
+          <p>
+            <label>
+              <input name="gender" type="radio" formControlName="gender" value="female"/>
+              <span>Female</span>
+            </label>
+          </p>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light brown darken-3" type="submit" name="action" [disabled]="checkForm()" >Submit
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+</div>
+</div>
+</div>
+
+
+
+
