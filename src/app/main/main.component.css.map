@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACE,wBAAuB;EACrB,UAAU,EAAE,OAAO;;AACvB,OAAO;EACL,gBAAgB,EAAE,SAAS;EAC3B,WAAG;IACD,UAAU,EAAE,IAAI;IAChB,eAAG;MACD,SAAS,EAAE,sBAAsB;;;;IAGnC,OAAO,EAAE,CAAC;;IAEV,OAAO,EAAE,CAAC;AAEZ,mBAAC;EACC,gBAAgB,EAAE,kBAAkB",
+"sources": ["main.component.sass"],
 "names": [],
 "file": "main.component.css"
 }

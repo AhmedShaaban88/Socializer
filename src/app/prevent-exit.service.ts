@@ -4,14 +4,11 @@ import {Observable} from 'rxjs';
 
 
 export interface PreventComponent {
-  canDeactivate: () => Observable<boolean> | Promise<boolean> | boolean;
+  canDeactivate: () => Observable<boolean> | boolean;
 }
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class PreventExitService implements CanDeactivate<PreventComponent> {
-
-  constructor(private component: PreventComponent) {
-  }
-  canDeactivate(): Observable<boolean>|Promise<boolean>|boolean {
-    return this.component.canDeactivate ? this.component.canDeactivate() : true;
+  canDeactivate(component: PreventComponent): Observable<boolean>|boolean {
+    return component.canDeactivate ? component.canDeactivate() : true;
   }
 }
