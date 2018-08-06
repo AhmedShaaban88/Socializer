@@ -1,0 +1,35 @@
+$mainColor: #ffcc80
+#signin-form
+  margin: 100px auto 0
+  box-shadow: 2px 2px 3px 0 rgba(117, 124, 129, 0.12)
+  max-width: 400px
+  height: 75vh
+  border: 1px solid #dacdbd63
+  text-align: center
+  & #head-text
+    color: rgb(154, 143, 131)
+  animation: formAnimation 2s
+@keyframes formAnimation
+  from
+    opacity: 0
+  to
+    opacity: 1
+label
+.active
+  color: $mainColor !important
+input
+  &:focus
+    border-bottom: 1px solid $mainColor !important
+    box-shadow: 0 1px 0 0 $mainColor !important
+.progress
+  background-color: white
+  top: 45px
+  .indeterminate
+    background-color: $mainColor !important
+#incorrect
+  color: #ef5c52
+#signup
+  line-height: 5em
+
+
+

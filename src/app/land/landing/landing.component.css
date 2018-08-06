@@ -1,0 +1,53 @@
+.images {
+  background: no-repeat center center;
+  background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .image-1 {
+    background-image: url("../../../assets/aa2.jpeg"); }
+
+  .image-2 {
+    background-image: url("../../../assets/bb2.jpeg"); }
+
+  .image-3 {
+    background-image: url("../../../assets/cc2.jpeg"); } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-1 {
+    background-image: url("../../../assets/aa1.jpeg"); }
+
+  .image-2 {
+    background-image: url("../../../assets/bb1.jpeg"); }
+
+  .image-3 {
+    background-image: url("../../../assets/pexels-photo-208509.jpeg"); } }
+@media screen and (min-width: 991px) {
+  .image-1 {
+    background-image: url("../../../assets/pexels-photo-326036.jpeg"); }
+
+  .image-2 {
+    background-image: url("../../../assets/pexels-photo-1255061.jpeg"); }
+
+  .image-3 {
+    background-image: url("../../../assets/belly-couple-expecting-208509.jpg"); } }
+.carousel {
+  height: 100vh !important; }
+  .carousel .indicators {
+    z-index: 2 !important; }
+
+#signup {
+  margin-right: 20px; }
+
+#overlay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #b1aa8670;
+  z-index: 1; }
+
+@media screen and (max-width: 800px) {
+  .carousel .carousel-fixed-item {
+    bottom: 130px !important; }
+  .carousel .indicators {
+    bottom: 40px !important; } }
+
+/*# sourceMappingURL=landing.component.css.map */

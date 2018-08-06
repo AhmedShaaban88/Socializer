@@ -1,19 +1,17 @@
 li > a.active:not(.home) {
   background: #795548; }
 
-section {
-  background-color: #dedada0a; }
-  section div {
-    margin-top: 20vh; }
-    section div img {
-      animation: MoveImage 1.5s ease-in; }
-
-@keyframes MoveImage {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 .fixed-action-btn a {
   background-color: #f6ab75 !important; }
+
+label .active {
+  color: #4e342e !important; }
+
+input:focus, textarea:focus {
+  border-bottom: 1px solid #4e342e !important;
+  box-shadow: 0 1px 0 0 #4e342e !important; }
+
+input[type='text']:focus + label, textarea:focus + label {
+  color: #4e342e !important; }
 
 /*# sourceMappingURL=main.component.css.map */

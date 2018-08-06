@@ -1,0 +1,36 @@
+#cover {
+  background: url("../../../assets/pexels-photo-208509.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 30vh; }
+
+#profile-pic {
+  background: url("../../../assets/avatar.jpeg") no-repeat center center;
+  background-size: contain;
+  height: 45vh;
+  margin: -10% auto; }
+  #profile-pic + p {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 20px; }
+
+i[title='Delete Friend'] {
+  cursor: pointer; }
+
+.view-section {
+  margin-top: 5%;
+  background-color: #f5f5dc70; }
+
+.card .card-content {
+  padding: 80px 0; }
+
+#comments {
+  margin-top: 25px;
+  color: white; }
+  #comments span {
+    text-transform: capitalize;
+    font-size: 15px; }
+  #comments p {
+    padding: 20px 0;
+    border: 1px solid; }
+
+/*# sourceMappingURL=profile.component.css.map */

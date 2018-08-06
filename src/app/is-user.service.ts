@@ -1,3 +1,6 @@
+/*
+allow user to login and logout
+ */
 import { Injectable } from '@angular/core';
 import {Observable, of} from 'rxjs';
 import {delay, tap} from 'rxjs/operators';

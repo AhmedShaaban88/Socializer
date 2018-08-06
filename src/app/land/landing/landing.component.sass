@@ -1,0 +1,43 @@
+$images-list: (image1: url("../../../assets/pexels-photo-326036.jpeg"), image2:url("../../../assets/pexels-photo-1255061.jpeg"),image3:url("../../../assets/belly-couple-expecting-208509.jpg"))
+$images-list1: (image1: url("../../../assets/aa1.jpeg"), image2:url("../../../assets/bb1.jpeg"),image3:url("../../../assets/pexels-photo-208509.jpeg"))
+$images-list2: (image1: url("../../../assets/aa2.jpeg"), image2:url("../../../assets/bb2.jpeg"),image3:url("../../../assets/cc2.jpeg"))
+
+.images
+  background: no-repeat center center
+  background-size: cover
+@media screen and (max-width: 768px)
+  @each $current in $images-list2
+    $i: index($images-list2,$current)
+    .image-#{$i}
+      background-image: map_get($images-list2,image#{$i})
+@media screen and (min-width: 768px) and (max-width: 991px)
+  @each $current in $images-list1
+    $i: index($images-list1,$current)
+    .image-#{$i}
+      background-image: map_get($images-list1,image#{$i})
+@media screen and (min-width: 991px)
+  @each $current in $images-list
+    $i: index($images-list,$current)
+    .image-#{$i}
+      background-image: map_get($images-list,image#{$i})
+
+.carousel
+  height: 100vh !important
+  .indicators
+    z-index: 2 !important
+#signup
+  margin-right: 20px
+
+#overlay
+  width: 100%
+  position: absolute
+  height: 100%
+  background-color: #b1aa8670
+  z-index: 1
+@media screen and (max-width: 800px)
+  .carousel
+    .carousel-fixed-item
+      bottom: 130px !important
+    .indicators
+      bottom: 40px !important
+

@@ -1,0 +1,48 @@
+<nav>
+  <div class="nav-wrapper orange lighten-3 ">
+    <a href="#" class="brand-logo center" routerLink="/">Socializer</a>
+  </div>
+</nav>
+<div class="container">
+  <div id="signin-form">
+    <div class="row" id="head-text">
+      <h4>Sign In
+      </h4>
+      <p>Welcome back please fill these fields</p>
+    </div>
+    <div class="row">
+      <form class="col s12" [formGroup]="registerForm" (ngSubmit)="submit()">
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" required formControlName="email">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" (keyup)="pass" [ngClass]="{valid:!pass&&registerForm.get('password').dirty,invalid:pass&&registerForm.get('password').dirty}" required formControlName="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light orange lighten-3" type="submit" name="action" [disabled]="registerForm.invalid" >Login
+          <i class="material-icons right">send</i>
+        </button>
+
+      </form>
+      <div class="progress hide">
+        <div class="indeterminate"></div>
+      </div>
+      <div>
+        <p id="incorrect" class="hide">Email or Password is incorrect</p>
+      </div>
+      <div>
+        <a routerLink="/signup" id="signup">Not A Socializer</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

@@ -1,18 +1,20 @@
+$mainColor: #4e342e
 li
   & > a.active:not(.home)
     background: #795548
-section
-  background-color: #dedada0a
-  div
-    margin-top: 20vh
-    img
-      animation: MoveImage 1.5s ease-in
-@keyframes MoveImage
-  from
-    opacity: 0
-  to
-    opacity: 1
 .fixed-action-btn
   a
     background-color: #f6ab75 !important
+label
+  .active
+    color: $mainColor !important
+input, textarea
+  &:focus
+    border-bottom: 1px solid $mainColor !important
+    box-shadow: 0 1px 0 0 $mainColor !important
+
+input[type='text'],textarea
+  &:focus+label
+    color: $mainColor !important
+
 

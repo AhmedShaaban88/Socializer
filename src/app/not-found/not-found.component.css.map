@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,OAAO;EACL,gBAAgB,EAAE,SAAS;EAC3B,WAAG;IACD,UAAU,EAAE,IAAI;IAChB,cAAE;MACA,OAAO,EAAE,YAAY;MACrB,KAAK,EAAE,OAAO;MACd,SAAS,EAAE,eAAe;MAC1B,0BAAa;QACX,KAAK,EAAE,OAAO;IAClB,eAAG;MACD,OAAO,EAAE,YAAY;MACrB,KAAK,EAAE,IAAI;MACX,SAAS,EAAE,aAAa;IAC1B,aAAC;MACC,KAAK,EAAE,GAAG;MACV,SAAS,EAAE,IAAI;MACf,WAAW,EAAE,GAAG",
+"sources": ["not-found.component.sass"],
 "names": [],
 "file": "not-found.component.css"
 }

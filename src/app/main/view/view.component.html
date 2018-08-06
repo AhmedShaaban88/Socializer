@@ -1,0 +1,74 @@
+<div id="cover">
+
+</div>
+<div id="profile-pic">
+
+</div>
+
+<p>{{userData.get('name')}}</p>
+
+
+<div class="center-align row view-section">
+  <h5>Personal Information:</h5>
+  <div class="col s12 m6">
+    <i class="material-icons">mail</i>
+    <p>{{userData.get('email')}}</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">local_phone</i>
+    <p>{{userData.get('phone')}}</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">location_on</i>
+    <p>
+      {{userData.get('address').street}} - {{userData.get('address').city}}</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">web</i>
+    <p>{{userData.get('website')}}</p>
+  </div>
+  <div class="col s12">
+  <i class="material-icons">work</i>
+    <p>
+      {{userData.get('company').name}}
+    </p>
+  </div>
+</div>
+<div class="row center-align view-section" *ngIf="loaded&&!error">
+  <h5>Latest Posts:</h5>
+  <div class="row">
+    <div class="col s12" *ngFor="let post of posts">
+      <div class="card brown darken-3">
+        <div class="card-content white-text">
+          <span class="card-title">{{post.title}}</span>
+          <p>{{post.body}}</p>
+        </div>
+        <div class="card-action">
+        <h5 class="white-text">Comments</h5>
+      <div id="comments" class="left-align" *ngFor="let comment of comments | async">
+        <span>{{comment.email}}</span>
+        <p class="center-align">{{comment.body}}</p>
+      </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="preloader-wrapper big active" *ngIf="!loaded&&!error">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+    <div class="circle"></div>
+  </div><div class="circle-clipper right">
+    <div class="circle"></div>
+  </div>
+  </div>
+</div>
+<div *ngIf="error" id="error" class="center-align">
+  {{error}}
+  <div id="warningPhoto"></div>
+</div>
+

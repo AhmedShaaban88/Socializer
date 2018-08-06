@@ -3,7 +3,7 @@
     <a class="brand-logo center">Socializer</a>
     <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a routerLink="./" routerLinkActive="active" class="home">Home</a></li>
+      <li><a routerLink="./home" routerLinkActive="active">Home</a></li>
       <li><a routerLink="./profile" routerLinkActive="active">Profile</a></li>
       <li><a routerLink="./friends" routerLinkActive="active">Friends</a></li>
       <li><a on-click = "logout()">Logout</a></li>
@@ -11,24 +11,48 @@
   </div>
 </nav>
 <ul class="sidenav" id="mobile-demo">
-  <li><a routerLink="./" routerLinkActive="active" class="home">Home</a></li>
+  <li><a routerLink="./home" routerLinkActive="active">Home</a></li>
   <li><a routerLink="./profile" routerLinkActive="active">Profile</a></li>
   <li><a routerLink="./friends" routerLinkActive="active">Friends</a></li>
   <li><a on-click = "logout()">Logout</a></li>
 </ul>
-<section class="center-align" *ngIf="false">
-  <div>
-  <img src="../../assets/icon.ico">
-    <h5> Welcome to Socializer</h5>
-    <p> You haven't any Friends or Posts</p>
-  </div>
+
+
   <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red" title="Write Post">
+    <a class="btn-floating btn-large red modal-trigger" title="Write Post" data-target="post">
       <i class="large material-icons">mode_edit</i>
     </a>
   </div>
 
-</section>
+
+<div id="post" class="modal">
+  <div class="modal-content">
+    <h4 class="center-align">New Post</h4>
+      <form class="col s12" #postForm="ngForm" (ngSubmit)="submitPost()">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="post-title" type="text" required #title="ngModel" [(ngModel)]="postTitle" name="title">
+            <label for="post-title">Title</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="post-body" class="materialize-textarea" required #body="ngModel" [(ngModel)]="postBody" name="body"></textarea>
+            <label for="post-body">Write here</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-close waves-effect waves-brown btn-flat" type="submit" [disabled]="postForm.form.invalid">Post</button>
+
+        </div>
+      </form>
+    </div>
+
+
+</div>
+
+
+
 <router-outlet class="center-align"></router-outlet>
 
 

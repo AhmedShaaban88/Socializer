@@ -1,0 +1,85 @@
+<div id="cover">
+
+</div>
+<div id="profile-pic">
+
+</div>
+
+<p>{{name}}</p>
+
+
+<div class="center-align row view-section">
+  <h5>Personal Information:</h5>
+  <div class="col s12 m6">
+    <i class="material-icons">mail</i>
+    <p>{{email}}</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">call</i>
+    <p>+1122355588989</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">date_range</i>
+    <p>{{bd}}</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">location_on</i>
+    <p>
+      Egypt - Cairo
+     </p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">web</i>
+    <p>www.google.com</p>
+  </div>
+  <div class="col s12 m6">
+    <i class="material-icons">work</i>
+    <p>
+Freelancer
+    </p>
+  </div>
+</div>
+<div class="row center-align view-section">
+  <h5 >Your Friends:</h5>
+  <p *ngIf="friends.length === 0">You haven't any friend you can add them from friends section</p>
+
+<div class="row" *ngIf="friends.length > 0">
+
+
+    <div class="col s12 m3" *ngFor="let friend of friends">
+      <div class="card">
+        <div class="card-image">
+          <i class="material-icons right small" title="Delete Friend" (click)="deleteFriend(friend)">close</i>
+          <img src="../../../assets/avatar.jpeg">
+          <span class="card-title">{{friend.name}}</span>
+        </div>
+        <div class="card-action">
+          <a [routerLink]="['../view',friend.id]" target="_blank">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+<div class="row center-align view-section">
+  <h5>Latest Posts:</h5>
+  <p *ngIf="posts.length === 0">You haven't any posts</p>
+
+  <div class="row" *ngIf="posts.length > 0">
+
+    <div class="col s12" *ngFor="let post of posts">
+      <div class="card brown darken-3">
+        <div class="card-content white-text">
+          <span class="card-title">{{post.title}}</span>
+          <p>{{post.body}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
