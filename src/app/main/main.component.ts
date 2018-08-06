@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {IsUserService} from '../is-user.service';
-import * as M from '../../assets/materialize/js/materialize.js';
+import * as M from 'materialize-css/dist/js/materialize.min';
 import {UsersService} from './users.service';
 import {UserdetailsService} from './userdetails.service';
 import {Router} from '@angular/router';

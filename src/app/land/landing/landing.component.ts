@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from '../../../assets/materialize/js/materialize.js';
+import * as M from 'materialize-css/dist/js/materialize.min';
 
 @Component({
   selector: 'app-landing',

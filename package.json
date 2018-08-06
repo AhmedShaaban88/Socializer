@@ -9,7 +9,6 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "postinstall": "ng build --prod --build-optimizer"
-
     },
     "private": true,
     "dependencies": {
@@ -24,7 +23,7 @@
         "@angular/router": "^6.1.0",
         "core-js": "^2.5.4",
         "jquery": "^3.3.1",
-        "materialize-css": "^0.100.2",
+        "materialize-css": "^1.0.0-rc.2",
         "rxjs": "^6.0.0",
         "zone.js": "^0.8.26"
     },

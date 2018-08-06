@@ -1,10 +1,10 @@
 #cover {
-  background: url("../../../assets/pexels-photo-208509.jpeg") no-repeat center center;
+  background: url("https://i.imgur.com/XgQKpLr.jpg") no-repeat center center;
   background-size: cover;
   height: 30vh; }
 
 #profile-pic {
-  background: url("../../../assets/avatar.jpeg") no-repeat center center;
+  background: url("https://i.imgur.com/mgcBv6Z.jpgg") no-repeat center center;
   background-size: contain;
   height: 45vh;
   margin: -10% auto; }

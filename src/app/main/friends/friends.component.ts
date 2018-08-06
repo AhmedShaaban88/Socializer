@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Users, UsersService} from '../users.service';
 import * as $ from 'jquery';
-import * as M from '../../../assets/materialize/js/materialize.js';
+import * as M from 'materialize-css/dist/js/materialize.min';
 import {UserdetailsService} from '../userdetails.service';
 
 

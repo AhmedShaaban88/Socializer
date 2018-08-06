@@ -4,31 +4,31 @@
 
 @media screen and (max-width: 768px) {
   .image-1 {
-    background-image: url("../../../assets/aa2.jpeg"); }
+    background-image: url("https://i.imgur.com/HPlkK3S.jpg"); }
 
   .image-2 {
-    background-image: url("../../../assets/bb2.jpeg"); }
+    background-image: url("https://i.imgur.com/AwP1jrU.jpg"); }
 
   .image-3 {
-    background-image: url("../../../assets/cc2.jpeg"); } }
+    background-image: url("https://i.imgur.com/XgQKpLr.jpg"); } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .image-1 {
-    background-image: url("../../../assets/aa1.jpeg"); }
+    background-image: url("https://i.imgur.com/l73VjIJ.jpgg"); }
 
   .image-2 {
-    background-image: url("../../../assets/bb1.jpeg"); }
+    background-image: url("https://i.imgur.com/byrev8a.jpg"); }
 
   .image-3 {
-    background-image: url("../../../assets/pexels-photo-208509.jpeg"); } }
+    background-image: url("https://i.imgur.com/qfbPPyV.jpg"); } }
 @media screen and (min-width: 991px) {
   .image-1 {
-    background-image: url("../../../assets/pexels-photo-326036.jpeg"); }
+    background-image: url("https://i.imgur.com/VuT5JbV.jpg"); }
 
   .image-2 {
-    background-image: url("../../../assets/pexels-photo-1255061.jpeg"); }
+    background-image: url("https://i.imgur.com/22S6hRU.jpg"); }
 
   .image-3 {
-    background-image: url("../../../assets/belly-couple-expecting-208509.jpg"); } }
+    background-image: url("https://i.imgur.com/M4dZAko.jpg"); } }
 .carousel {
   height: 100vh !important; }
   .carousel .indicators {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UserdetailsService, Posts} from '../userdetails.service';
-import * as M from '../../../assets/materialize/js/materialize.js';
+import * as M from 'materialize-css/dist/js/materialize.min';
 import {Users} from '../users.service';
 
 
