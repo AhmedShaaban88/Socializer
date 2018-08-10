@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {NotFoundComponent} from './not-found/not-found.component';
-import {MainModule} from './main/main.module';
 import {GaurdService} from './gaurd.service';
 import {PreventExitService} from './prevent-exit.service';
 import {LandingComponent} from './land/landing/landing.component';
+import {MainModule} from './main/main.module';
 
 const routes: Routes = [
   {
@@ -15,6 +15,7 @@ const routes: Routes = [
   {
     path: 'main',
     loadChildren: () => MainModule,
+    // loadChildren: './main/main.module#MainModule',
     canLoad: [GaurdService]
   },
   {

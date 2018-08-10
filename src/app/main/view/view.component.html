@@ -38,13 +38,13 @@
   <h5>Latest Posts:</h5>
   <div class="row">
     <div class="col s12" *ngFor="let post of posts">
-      <div class="card brown darken-3">
-        <div class="card-content white-text">
+      <div class="card">
+        <div class="card-content">
           <span class="card-title">{{post.title}}</span>
           <p>{{post.body}}</p>
         </div>
         <div class="card-action">
-        <h5 class="white-text">Comments</h5>
+        <h5>Comments</h5>
       <div id="comments" class="left-align" *ngFor="let comment of comments | async">
         <span>{{comment.email}}</span>
         <p class="center-align">{{comment.body}}</p>

@@ -12,5 +12,7 @@ section {
     opacity: 1; } }
 .card .card-content {
   padding: 80px 0; }
+.card .card-title {
+  font-weight: 400; }
 
 /*# sourceMappingURL=home.component.css.map */

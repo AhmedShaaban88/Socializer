@@ -3,7 +3,7 @@
   box-shadow: 2px 2px 3px 0 rgba(117, 124, 129, 0.12);
   max-width: 620px;
   height: 100vh;
-  border: 1px solid #dacdbd63;
+  border: 1px solid #dacdbd;
   text-align: center;
   animation: formAnimation 2s; }
   #signup-form #head-text {

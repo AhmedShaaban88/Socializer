@@ -9,8 +9,8 @@
 <div class="row center-align" *ngIf="posts.length > 0">
 
   <div class="col s12" *ngFor="let post of posts">
-    <div class="card brown darken-3">
-      <div class="card-content white-text">
+    <div class="card">
+      <div class="card-content">
         <h5>{{uname}}</h5><br>
         <span class="card-title">{{post.title}}</span>
         <p>{{post.body}}</p>
@@ -22,8 +22,8 @@
 <div class="row center-align" *ngIf="friendsPosts.length > 0">
   <div class="col s12" *ngFor="let friendPost of friendsPosts; let i = index;">
     <div *ngFor="let post of friendPost">
-    <div class="card brown darken-3">
-      <div class="card-content white-text">
+    <div class="card">
+      <div class="card-content">
         <h5>{{friendsNames[i]}}</h5><br>
         <span class="card-title">{{post?.title}}</span>
         <p>{{post?.body}}</p>
